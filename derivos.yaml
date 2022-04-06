@@ -1,0 +1,47 @@
+packages:
+
+  keep_luet_db: true
+  rootfs:
+
+  uefi:
+  - live/systemd-boot
+  - system/mocaccino-live-boot
+  isoimage:
+  - live/syslinux
+  - system/mocaccino-live-boot
+
+# Repositories packages from repository-index
+repository:
+  packages:
+  - repository/luet
+  - repository/livecd
+  - repository/mocaccino-extra-stable
+  - repository/mocaccino-os-commons-stable
+  - repository/mocaccino-repository-index
+
+initramfs:
+  kernel_file: "bzImage"
+  rootfs_file: "Initrd"
+
+
+image_prefix: "derivOS-"
+image_date: true
+label: "ISOIMAGE"
+luet:
+  repositories:
+  - name: "mocaccino-repository-index"
+    description: "MocaccinoOS Repository index"
+    type: "http"
+    enable: true
+    cached: true
+    priority: 1
+    urls:
+    - "https://raw.githubusercontent.com/mocaccinoOS/repository-index/gh-pages"
+  - name: "derivOS-desktop"
+    description: "derivOS desktop repository"
+    type: "docker"
+    enable: true
+    cached: true
+    priority: 1
+    urls:
+    - "quay.io/derivos/desktop"

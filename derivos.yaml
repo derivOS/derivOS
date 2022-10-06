@@ -2,7 +2,10 @@ packages:
 
   keep_luet_db: true
   rootfs:
-
+  - derivOS/Core
+  - derivOS/Logiciels
+  - derivOS/Noyau
+  - apps/Atom
   uefi:
   - live/systemd-boot
   - system/mocaccino-live-boot

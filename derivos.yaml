@@ -23,7 +23,7 @@ repository:
   - repository/mocaccino-repository-index
 
 initramfs:
-  kernel_file: "bzImage"
+  kernel_file: "vmlinuz"
   rootfs_file: "Initrd"
 
 

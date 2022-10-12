@@ -24,7 +24,7 @@ repository:
 
 initramfs:
   kernel_file: "vmlinuz"
-  rootfs_file: "Initrd"
+  rootfs_file: "initrd-dracut"
 
 
 image_prefix: "derivOS-"

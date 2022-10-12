@@ -8,10 +8,10 @@ packages:
   - apps/atom
   uefi:
   - live/systemd-boot
-  - system/mocaccino-live-boot
+  - system/derivOS-live-boot
   isoimage:
   - live/syslinux
-  - system/mocaccino-live-boot
+  - system/derivOS-live-boot
 
 # Repositories packages from repository-index
 repository:

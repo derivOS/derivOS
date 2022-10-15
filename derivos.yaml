@@ -5,6 +5,7 @@ packages:
   - derivOS/Core
   - derivOS/Logiciels
   - derivOS/Noyau
+  - derivOS/Users
   - apps/atom
   uefi:
   - live/systemd-boot
